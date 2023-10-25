@@ -49,6 +49,13 @@
     /*Main Titles*/
     --MainTitles-font:'Noto Serif Old Uyghur', serif;
 }
+.lang {
+    position: absolute;
+    top: 30%;
+}
+.lang a:hover {
+    color: #732A24;
+}
 .container {
     margin: 0 5%;
 }
@@ -162,4 +169,84 @@ header {
 .hero-title p {
     font-size: 1.5em;
 }
+/* Featured Books Section*/
+.featured {
+    background-color: var(--AntiqueVintage-Background-color);
+    min-height: 100vh;
+}
+.featured > .container h2 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+}
+.featured-books-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3em;
+}
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 1em;
+    background-color: #ffe5b5;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.479);
+    min-height: 580px;
+}
+.book-card img {
+    height: 100%;
+    width: 100%;
+}
+.book-card h3 {
+    text-align: center;
+    padding-top: .8em;
+    font-size: 1em;
 
+}
+.author {
+    padding-bottom: 1em;
+}
+/* Hide the "Read More" link initially */
+.more-text {
+    display: none;
+}
+.book-synopsis {
+    max-height: 80px; /* Adjust as needed */
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.book-synopsis p { 
+    text-align: justify;
+    font-size: .9em;
+}
+
+.book-card:hover .book-synopsis {
+    max-height: 100%; /* Expands to fit content on hover */
+}
+
+/* Style the "Read More" link */
+.read-more {
+    color: #007BFF; /* Change color to fit your design */
+    cursor: pointer;
+}
+
+/* When clicked, show the additional text */
+.read-more.clicked + .more-text {
+    display: block;
+}
+.buttons > button {
+    border: none;
+    background-color: #003049;
+    padding: 1em;
+    cursor: pointer;
+}
+.buttons > button:hover {
+    background-color: #02527e;
+}
