@@ -76,6 +76,7 @@ header {
     background-color: var(--AntiqueVintage-HeaderFooter-color);
     padding: 1em;
     position: fixed;
+    z-index: 999;
 }
 /* Main Menu - Header */
 .social, .main-menu ul, header > .container {
@@ -97,7 +98,7 @@ header {
     letter-spacing: 5px;
 }
 .main-menu ul {
-    gap: .4em;
+    gap: .8em;
 }
 .main-menu ul li a {
     text-transform: uppercase;
@@ -106,6 +107,7 @@ header {
 .main-menu ul li a:hover {
     color: #A93226;
 }
+/* menu Store dropdown */
 .menu-dropdown {
     position: relative;
 }
@@ -129,3 +131,35 @@ header {
     opacity: 1;
     visibility: visible;
 }
+/* Hero Section */
+.hero-section {
+    z-index: -1;
+    background-image: url(./assets/bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+    height: 100vh;
+}
+.hero-section > .container {
+    z-index: 2;
+}
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5f160fec;
+    padding: 2em;
+    text-align: center;
+    color: rgb(226, 226, 226);
+    border-radius: 8px;
+}
+.hero-title h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+.hero-title p {
+    font-size: 1.5em;
+}
+
