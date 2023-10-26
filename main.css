@@ -435,3 +435,9 @@ header > .container {
 .contact-form button:hover {
     background-color: #002d5e;
 }
+/* */
+footer {
+    color: #002d5e;
+    padding: 1em;
+    background-color: var(--AntiqueVintage-HeaderFooter-color);
+}
