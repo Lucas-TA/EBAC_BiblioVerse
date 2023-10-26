@@ -449,6 +449,9 @@ footer {
 }
 
 @media screen and (max-width: 800px){
+    .hero-title {
+        max-width: 90%;
+    }
     .mobile-menu-toggle {
         display: block;
         cursor: pointer;
