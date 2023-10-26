@@ -173,6 +173,9 @@ header {
 .featured {
     background-color: var(--AntiqueVintage-Background-color);
     min-height: 100vh;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    border-bottom: 3px solid rgba(255, 171, 62, 0.61);
 }
 .featured > .container h2 {
     width: 100%;
@@ -208,17 +211,12 @@ header {
     text-align: center;
     padding-top: .8em;
     font-size: 1em;
-
 }
 .author {
     padding-bottom: 1em;
 }
-/* Hide the "Read More" link initially */
-.more-text {
-    display: none;
-}
 .book-synopsis {
-    max-height: 80px; /* Adjust as needed */
+    max-height: 80px;
     overflow: hidden;
     margin-bottom: 10px;
 }
@@ -226,27 +224,95 @@ header {
     text-align: justify;
     font-size: .9em;
 }
-
 .book-card:hover .book-synopsis {
-    max-height: 100%; /* Expands to fit content on hover */
+    max-height: 100%;
 }
 
-/* Style the "Read More" link */
-.read-more {
-    color: #007BFF; /* Change color to fit your design */
-    cursor: pointer;
-}
-
-/* When clicked, show the additional text */
-.read-more.clicked + .more-text {
-    display: block;
-}
-.buttons > button {
+.buttons > button, .btn-list {
     border: none;
     background-color: #003049;
     padding: 1em;
     cursor: pointer;
 }
-.buttons > button:hover {
+.buttons > button:hover, .btn-list:hover {
     background-color: #02527e;
+}
+/* categories section*/
+.book-categories {
+    padding-top: 4em;
+    background-color: var(--AntiqueVintage-CategoryHighlight-color);
+}
+.book-categories > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
+.book-categories > .container h2 {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+.category-container {
+    padding: 2em;
+    border-radius: 8px;
+    background-color: rgba(255, 226, 199, 0.849);
+    margin-bottom: 2em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.671);
+}
+.category-container h3 {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+}
+.category-list-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
+.category-list {
+    margin: 1em 0;
+}
+.category-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+}
+.category-list ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 150px;
+    max-height: 300px;
+}
+.category-list ul li p {
+    text-align: center;
+    padding-bottom: .5em;
+}
+.category-list ul li img {
+    width: 100%;
+    height: 100%;
+}
+.list-more {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+}
+.list-more:hover {
+    color: #003049;
+}
+.other-category {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1d1d1d;
+}
+.other-category:hover {
+    color: #003049;
 }
