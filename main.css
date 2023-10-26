@@ -51,7 +51,7 @@
 }
 .lang {
     position: absolute;
-    top: 30%;
+    top: 37%;
 }
 .lang a:hover {
     color: #732A24;
@@ -95,14 +95,28 @@ header {
 .social {
     gap: .8em;
 }
+header > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 .header-title {
     text-align: center;
     text-transform: uppercase;
 }
 .header-title h1 {
-    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+.header-title h1 > a{
+    font-size: .6em;
     font-weight: bold;
     letter-spacing: 5px;
+    padding: 0;
+    margin: 0;
+    color:#003049;
+    font-family: var(--MainTitles-font);
 }
 .main-menu ul {
     gap: .8em;
@@ -334,3 +348,29 @@ header {
     height: 200px;
 }
 /* About Us */
+.about {
+    background-color: var(--AntiqueVintage-Background-color);
+}
+.about > .container, .about-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+.about-text-container {
+    margin: 0 5%;
+}
+.about > .container {
+    padding-bottom: 3em;
+}
+.about > .container h2 {
+    padding: 2em;
+    text-transform: uppercase;
+}
+.about-text-container h3 {
+    width: 100%;
+    text-align: left;
+}
