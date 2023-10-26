@@ -351,6 +351,8 @@ header > .container {
 /* About Us */
 .about {
     background-color: var(--AntiqueVintage-Background-color);
+    min-height: 100vh;
+    padding-top: 3em;
 }
 .about > .container, .about-text-container {
     display: flex;
@@ -363,9 +365,6 @@ header > .container {
 }
 .about-text-container {
     margin: 0 5%;
-}
-.about > .container {
-    padding-bottom: 3em;
 }
 .about > .container h2 {
     padding: 2em;
