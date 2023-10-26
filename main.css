@@ -194,11 +194,15 @@ header {
     justify-content: center;
     align-items: center;
     width: 250px;
+    min-height: 560px;
     padding: 1em;
     background-color: #ffe5b5;
     border-radius: 8px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.479);
-    min-height: 580px;
+}
+.img-card-container {
+    width: 100%;
+    height: 300px;
 }
 .book-card img {
     height: 100%;
@@ -208,14 +212,9 @@ header {
     text-align: center;
     padding-top: .8em;
     font-size: 1em;
-
 }
 .author {
     padding-bottom: 1em;
-}
-/* Hide the "Read More" link initially */
-.more-text {
-    display: none;
 }
 .book-synopsis {
     max-height: 80px; /* Adjust as needed */
@@ -230,23 +229,19 @@ header {
 .book-card:hover .book-synopsis {
     max-height: 100%; /* Expands to fit content on hover */
 }
-
-/* Style the "Read More" link */
-.read-more {
-    color: #007BFF; /* Change color to fit your design */
-    cursor: pointer;
+.card-title-container {
+    min-height: 80px;
+    text-align: center;
 }
-
-/* When clicked, show the additional text */
-.read-more.clicked + .more-text {
-    display: block;
+.card-buttons {
+    justify-self: flex-end;
 }
-.buttons > button {
+.card-buttons > button {
     border: none;
     background-color: #003049;
     padding: 1em;
     cursor: pointer;
 }
-.buttons > button:hover {
+.card-buttons > button:hover {
     background-color: #02527e;
 }
