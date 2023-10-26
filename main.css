@@ -239,6 +239,7 @@ header {
     background-color: #003049;
     padding: 1em;
     cursor: pointer;
+    border-radius: 8px;
 }
 .card-buttons > button:hover, .btn-list:hover {
     background-color: #02527e;
@@ -286,6 +287,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5em;
 }
 .category-list ul li {
@@ -293,7 +295,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 150px;
+    width: 150px;
     min-height: 300px;
     border-radius: 8px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.575);
