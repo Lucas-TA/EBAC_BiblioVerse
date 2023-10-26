@@ -87,6 +87,9 @@ header {
     z-index: 999;
 }
 /* Main Menu - Header */
+.mobile-menu-toggle {
+    display: none;
+}
 .social, .main-menu ul, header > .container {
     display: flex;
     flex-direction: row;
@@ -130,6 +133,9 @@ header > .container {
     color: #A93226;
 }
 /* menu Store dropdown */
+.main-menu-mobile {
+    display: none;
+}
 .menu-dropdown {
     position: relative;
 }
@@ -440,4 +446,103 @@ footer {
     color: #002d5e;
     padding: 1em;
     background-color: var(--AntiqueVintage-HeaderFooter-color);
+}
+
+@media screen and (max-width: 800px){
+    .mobile-menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        z-index: 9999999;
+    }
+    .mobile-menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #000; /* Customize the color */
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+    .mobile-menu-toggle:hover .main-menu-mobile {
+        display: block;
+    }
+    .main-menu-mobile {
+        z-index: 9999;
+        top: 100%;
+        right: 0;
+        position: absolute;
+        background-color: var(--EarthlyTones-Background-color);
+    }
+    .main-menu-mobile ul {
+        width: 300px;
+    }
+    .main-menu-mobile ul li{
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        width: 100%;
+        border-bottom: 2px solid rgb(253, 217, 213);
+        padding: .5em;
+        
+    }
+    .main-menu-mobile ul li:hover {
+        background-color: #A58E68;
+    }
+    .main-menu-mobile ul li a {
+        color: orange;
+    }
+    .main-menu, .social {
+        display: none;
+    }
+    .header-title {
+        width: 100%;
+    }
+    .featured > .container {
+        width: 100%;
+        margin: 0;
+    }
+    .book-card {
+        width: 90%;
+    }
+    .category-container {
+        align-items: center;
+        justify-content: center;
+    }
+    .category-container h3 {
+        text-align: center;
+    }
+    .category-list {
+        width: 100%;
+    }
+    .category-list ul, .category-list-container, .category-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .category-container{
+        margin: 0;
+        width: 100%;
+    }
+    .category-list ul li {
+        width: 80%;
+    }
+    .contact-section > .container {
+        width: 90%;
+    }
+    .contact-form {
+        width: 90%;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+    .other-category {
+        padding-top: 1em;
+    }
+    footer > .container {
+        text-align: center;
+    }
 }
