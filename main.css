@@ -227,14 +227,20 @@ header {
 .book-card:hover .book-synopsis {
     max-height: 100%;
 }
-
-.buttons > button, .btn-list {
+.card-title-container {
+    min-height: 80px;
+    text-align: center;
+}
+.card-buttons {
+    justify-self: flex-end;
+}
+.card-buttons > button, .btn-list {
     border: none;
     background-color: #003049;
     padding: 1em;
     cursor: pointer;
 }
-.buttons > button:hover, .btn-list:hover {
+.card-buttons > button:hover, .btn-list:hover {
     background-color: #02527e;
 }
 /* categories section*/
@@ -285,18 +291,24 @@ header {
 .category-list ul li {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     max-width: 150px;
-    max-height: 300px;
+    min-height: 300px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.575);
+    background-color: rgb(255, 241, 212);
+    padding: .6em;
 }
 .category-list ul li p {
     text-align: center;
     padding-bottom: .5em;
+    font-weight: 800;
 }
 .category-list ul li img {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 .list-more {
     font-size: 2em;
@@ -315,4 +327,7 @@ header {
 }
 .other-category:hover {
     color: #003049;
+}
+.category-image-container {
+    height: 200px;
 }
