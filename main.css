@@ -452,6 +452,9 @@ footer {
     .hero-title {
         max-width: 90%;
     }
+    .hero-title h1 {
+        font-size: 2.4em;
+    }
     .mobile-menu-toggle {
         display: block;
         cursor: pointer;
